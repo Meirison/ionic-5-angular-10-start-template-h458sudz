@@ -1,0 +1,43 @@
+<ion-header> 
+<ion-toolbar>
+  <ion-title class="titulo">
+    Receber as doações
+  </ion-title>
+</ion-toolbar>
+</ion-header>
+
+<ion-content>
+<div class="conteudo animate__animated animate__fadeInLeft">
+  <img
+    class="img-item"
+    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ541Nogd1XFp2oLJGK4Pqw635Jer5GmVTP2A&s"
+    alt="Imagem Solidariedade"
+  />
+  <p class="texto-item">
+    Está precisando de ajuda? Podemos te ajudar! Preencha os campos e fale com um voluntário. 🧑‍🤝‍🧑
+  </p>
+
+  <!-- Formulário -->
+  <form (ngSubmit)="enviarFormulario()" #formDoacoes="ngForm">
+    <ion-item>
+      <ion-label position="floating">Nome</ion-label>
+      <ion-input type="text" required [(ngModel)]="nome" name="nome"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">E-mail</ion-label>
+      <ion-input type="email" required [(ngModel)]="email" name="email"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Descrição da ajuda</ion-label>
+      <ion-textarea required [(ngModel)]="descricao" name="descricao"></ion-textarea>
+    </ion-item>
+
+    <ion-button type="submit" expand="block" [disabled]="!formDoacoes.form.valid">
+      Falar com Voluntário
+    </ion-button>
+  </form>
+</div>
+</ion-content>
+

@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title class="titulo">
+      Doações
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<div class="conteudo animate_animated animate_fadeInLeft">
+  
+  <ion-card (click) = "doarAlimentos ()">
+    <ion-item lines="none">
+      <ion-thumbnail slot="start">
+        <img src="https://cdn-icons-png.flaticon.com/512/4437/4437673.png" />
+      </ion-thumbnail>
+      <ion-label>Comida</ion-label>
+    </ion-item>
+  </ion-card>
+
+  <ion-card (click) = "doarRoupas ()">
+    <ion-item lines="none">
+      <ion-thumbnail slot="start">
+        <img src="https://cdn-icons-png.flaticon.com/512/6165/6165574.png" />
+      </ion-thumbnail>
+      <ion-label>Roupas</ion-label>
+    </ion-item>
+  </ion-card>
+
+  <ion-card (click) = "doarSangue ()">
+    <ion-item lines="none">
+      <ion-thumbnail slot="start">
+        <img src="https://cdn-icons-png.flaticon.com/512/967/967119.png" />
+      </ion-thumbnail>
+      <ion-label>Sangue</ion-label>
+    </ion-item>
+  </ion-card>
+
+</div>
+</ion-content>

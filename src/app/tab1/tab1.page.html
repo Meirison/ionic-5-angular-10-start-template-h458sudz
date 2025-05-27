@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title class="titulo"> Home </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+<!-- Bloco com animação do Animate.css -->
+<div class="conteudo animate__animated animate__fadeInLeft">
+  
+  <!-- Imagem de introdução -->
+  <img
+    class="img-item"
+    src="https://cdn-icons-png.flaticon.com/512/5102/5102230.png"
+    alt="imagem de solidariedade"
+  />
+
+  <!-- Texto introdutório -->
+  <p>
+    Opa, tudo bem? Espero que sim. Existem diversas pessoas pelo mundo precisando de sua ajuda, e elas gostariam muito de uma mão amiga nesse momento. Veja abaixo como ajudar nesse momento de necessidade ❤️.
+  </p>
+
+  <!-- Card: Quero Doar -->
+  <ion-card button [routerLink]="['/tabs/tab2']">
+    <ion-item>
+      <ion-thumbnail slot="start">
+        <img src="https://cdn-icons-png.flaticon.com/512/2904/2904948.png" /> 
+      </ion-thumbnail>
+      <ion-label>Quero Doar</ion-label> 
+    </ion-item> 
+  </ion-card>
+
+  <!-- Card: Preciso de doações -->
+  <ion-card button [routerLink]="['/tabs/tab3']">
+    <ion-item>
+      <ion-thumbnail slot="start">
+        <img src="https://cdn-icons-png.flaticon.com/512/5188/5188872.png" /> 
+      </ion-thumbnail>
+      <ion-label>Preciso de doações</ion-label> 
+    </ion-item> 
+  </ion-card>
+
+</div>
+
+</ion-content>
